@@ -1,4 +1,4 @@
-# 💻 Projeto Turma Inteligência de Dados Ipiranga Tech 
+# 💻 Projeto Turma Inteligência de Dados Ipiranga 
 
 Este repositório contém os artefatos do projeto realizado pela nossa equipe como parte do curso Turma Inteligência de Dados da [Ipiranga](https://portal.ipiranga/wps/portal/ipiranga/inicio), em parceria com a [Gama Academy](https://www.gama.academy/). O projeto teve como objetivo aplicar e consolidar os conhecimentos adquiridos em diferentes ferramentas e conceitos relacionados à Inteligência de Dados.
 
