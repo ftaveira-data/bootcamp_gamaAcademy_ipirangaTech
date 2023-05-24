@@ -1,4 +1,4 @@
-# 💻 Projeto Turma Inteligência de Dados Ipiranga Inclusão Tech 
+# 💻 Projeto Inteligência de Dados Ipiranga Inclusão Tech 
 
 Este repositório contém os artefatos do projeto realizado pela nossa equipe como parte do curso Turma Inteligência de Dados da [Ipiranga](https://portal.ipiranga/wps/portal/ipiranga/inicio), em parceria com a [Gama Academy](https://www.gama.academy/). O projeto teve como objetivo aplicar e consolidar os conhecimentos adquiridos em diferentes ferramentas e conceitos relacionados à Inteligência de Dados.
 
@@ -30,10 +30,10 @@ Aqui está uma visão geral das ferramentas e tecnologias que usamos ao longo do
 
 ## 👥 Equipe
 
-- Francisco Taveira (Scrum Master, Time Scrum)
-- Hugo Seixas (Product Owner, Time Scrum)
-- Diego Feolla (Time Scrum)
-- Romulo Rosa (Time Scrum)
+- Francisco Taveira (Scrum Master, Time Scrum) https://github.com/ftaveira-dev
+- Hugo Seixas (Product Owner, Time Scrum) https://github.com/hugo-seixas
+- Diego Feolla (Time Scrum) https://github.com/diegofeolla
+- Romulo Rosa (Time Scrum) https://github.com/romulofrontend
 
 ## 📝 Considerações Finais
 
