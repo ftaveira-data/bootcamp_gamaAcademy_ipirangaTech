@@ -1,4 +1,4 @@
-# 💻 Projeto Turma Inteligência de Dados Ipiranga 
+# 💻 Projeto Turma Inteligência de Dados Ipiranga Inclusäo Tech 
 
 Este repositório contém os artefatos do projeto realizado pela nossa equipe como parte do curso Turma Inteligência de Dados da [Ipiranga](https://portal.ipiranga/wps/portal/ipiranga/inicio), em parceria com a [Gama Academy](https://www.gama.academy/). O projeto teve como objetivo aplicar e consolidar os conhecimentos adquiridos em diferentes ferramentas e conceitos relacionados à Inteligência de Dados.
 
@@ -25,13 +25,16 @@ Aqui está uma visão geral das ferramentas e tecnologias que usamos ao longo do
 ### Business Intelligence (BI)
 - **[Power BI](https://powerbi.microsoft.com/):** Usamos o Power BI para criar um dashboard interativo e realizar análises de dados a partir das respostas dos usuários. O dashboard permitiu visualizar as informações de forma clara e facilitou a identificação de insights e padrões nos dados.
 
+### Metodologia de Pesquisa
+- **[Google Forms](https://docs.google.com/forms/d/1aBBzOhupm9DMvKiR-8Kso4lDWfCImGW5AZWjP88JBhE/edit):** Utilizamos o Google Form para simular a coleta de respostas dos usuários a partir de um formulário online. As perguntas foram incluídas no formulário e as respostas foram armazenadas em um arquivo de planilha do Google Sheets, foram geradas de forma aleatória no PyCharm. 
+
 ## 👥 Equipe
 
-- Francisco Taveira
-- Hugo Seixas
-- Diego Feolla
-- Romulo Rosa
+- Francisco Taveira (Scrum Master, Time Scrum)
+- Hugo Seixas (Product Owner, Time Scrum)
+- Diego Feolla (Time Scrum)
+- Romulo Rosa (Time Scrum)
 
 ## 📝 Considerações Finais
 
-O projeto da Turma Inteligência de Dados Ipiranga Tech foi uma excelente oportunidade para aplicar os conhecimentos adquiridos durante o curso em um cenário prático. Utilizando as ferramentas e conceitos mencionados acima, nossa equipe foi capaz de desenvolver habilidades essenciais para a área de Inteligência de Dados e obter uma visão mais abrangente sobre o processo de desenvolvimento e análise de dados. Agradecemos a todos que nos apoiaram nesta jornada!
+O projeto da Turma Inteligência de Dados Ipiranga Inclusão Tech foi uma excelente oportunidade para aplicar os conhecimentos adquiridos durante o curso em um cenário prático. Utilizando as ferramentas e conceitos mencionados acima, nossa equipe foi capaz de desenvolver habilidades essenciais para a área de Inteligência de Dados e obter uma visão mais abrangente sobre o processo de desenvolvimento e análise de dados. Agradecemos a todos que nos apoiaram nesta jornada!
