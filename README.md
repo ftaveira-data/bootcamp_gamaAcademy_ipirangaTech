@@ -14,6 +14,8 @@ Aqui está uma visão geral das ferramentas e tecnologias que usamos ao longo do
 - **[Kanban](https://pt.wikipedia.org/wiki/Kanban):** Usamos a metodologia Kanban para gerenciar as atividades do projeto e acompanhar o progresso de cada etapa.
 - **[Trello](https://trello.com/):** Trello, uma ferramenta de gerenciamento de projetos online baseada no Kanban, nos ajudou a organizar as tarefas, atribuir responsabilidades e acompanhar o fluxo de trabalho da equipe.
 
+- **Link pro Trello** https://trello.com/b/OuHokKCg/grupo-1-desafio
+
 ### Controle de Versão
 - **[Git](https://git-scm.com/):** Usamos o Git, um sistema de controle de versão, para gerenciar o código-fonte do projeto e permitir o trabalho colaborativo.
 - **[GitHub](https://github.com/):** O GitHub, uma plataforma online de hospedagem de repositórios Git, foi nossa escolha para armazenar e compartilhar o código e arquivos relacionados ao projeto.
@@ -25,8 +27,12 @@ Aqui está uma visão geral das ferramentas e tecnologias que usamos ao longo do
 ### Business Intelligence (BI)
 - **[Power BI](https://powerbi.microsoft.com/):** Usamos o Power BI para criar um dashboard interativo e realizar análises de dados a partir das respostas dos usuários. O dashboard permitiu visualizar as informações de forma clara e facilitou a identificação de insights e padrões nos dados.
 
+- **Link pro Dashboard** https://app.powerbi.com/view?r=eyJrIjoiNTQyY2NjYjAtNjkzNy00ODhhLWIxY2YtMzcxMTc5ODIyZGVhIiwidCI6Ijg0M2MyYzU4LWM5NWQtNDJiZS05NWMwLTlkZjc5ODlhMzdlNSJ9
+
 ### Metodologia de Pesquisa
 - **[Google Forms](https://docs.google.com/forms/d/1aBBzOhupm9DMvKiR-8Kso4lDWfCImGW5AZWjP88JBhE/edit):** Utilizamos o Google Forms para simular a coleta de respostas dos usuários a partir de um formulário online. As perguntas foram incluídas no formulário e as respostas foram armazenadas em um arquivo de planilha do Google Sheets, foram geradas de forma aleatória no PyCharm. 
+
+- **Link pro Formulário** https://docs.google.com/forms/d/e/1FAIpQLSdFtraN68GXt3XJ7UJcQfCJmUj0Q8jCaN-SkkA0BtkOg5dtnQ/viewform
 
 ## 👥 Equipe
 
