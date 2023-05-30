@@ -1,0 +1,58 @@
+import random
+import pandas as pd
+
+# opções de resposta para as perguntas qualitativas
+opcoes_melhorias = ['Design do aplicativo', 'Ofertas mais atraentes', 'Maior facilidade de uso', 'Mais funcionalidades']
+opcoes_necessidades = ['Combustível de qualidade', 'Atendimento ao cliente', 'Segurança', 'Limpeza e organização']
+opcoes_aspectos = ['Preço', 'Qualidade do combustível', 'Localização', 'Serviços adicionais']
+opcoes_sugestoes = ['Mais opções de pagamento', 'Melhorias no ambiente de loja de conveniência', 'Programa de fidelidade', 'Postos mais modernos']
+opcoes_sustentabilidade = ['Não considero importante', 'Importante, mas não influencia minha escolha', 'Importante e influencia minha escolha', 'Extremamente importante e só escolho postos que levam isso a sério']
+opcoes_frequencia_abastecimento = ['Diariamente', 'Semanalmente', 'Mensalmente', 'Raramente']
+opcoes_criterios_escolha = ['Preço', 'Localização', 'Qualidade Combustível', 'Formas de Pagamento', 'Serviços Oferecidos', 'Promoções e Descontos']
+opcoes_utilizacao_app = ['Diariamente', 'Semanalmente', 'Mensalmente', 'Raramente']
+opcoes_motivo_utilizacao_app = ['Economia', 'Facilidade', 'Vantagens', 'Ambiental', 'Indicação']
+opcoes_experiencia_app = ['Ruim', 'Bom', 'Ótimo', 'Excelente']
+
+# carrega a base de dados a partir de um arquivo CSV
+df = pd.read_excel(r'C:\Users\Chico\PycharmProjects\pythonProject\IpirangaTech\data_base_IpirangaTech.xlsx', engine='openpyxl')
+
+# itera sobre as linhas do DataFrame para fazer as perguntas
+respostas = []
+for index, row in df.iterrows():
+    # perguntas quantitativas
+    nome = row['nome']
+    genero = row['genero']
+    idade = row['idade']
+    cidade_estado = row['cidade_estado']
+    estado_civil = row['estado_civil']
+    escolaridade = row['escolaridade']
+    renda = row['renda']
+    tipo_de_veiculo = row['tipo_de_veiculo']
+    combustivel = row['combustivel']
+    km_por_mes = row['km_por_mes']
+
+    # perguntas qualitativas
+    melhorias = random.choice(opcoes_melhorias)
+    necessidades = random.choice(opcoes_necessidades)
+    aspectos = random.choice(opcoes_aspectos)
+    sugestoes = random.choice(opcoes_sugestoes)
+    sustentabilidade = random.choice(opcoes_sustentabilidade)
+    frequencia_abastecimento = random.choice(opcoes_frequencia_abastecimento)
+    criterios_escolha = random.choice(opcoes_criterios_escolha)
+    utilizacao_app = random.choice(opcoes_utilizacao_app)
+    motivo_utilizacao_app = random.choice(opcoes_motivo_utilizacao_app)
+    experiencia_app = random.choice(opcoes_experiencia_app)
+
+    # adiciona as respostas ao DataFrame
+    respostas.append([nome, genero, idade, cidade_estado, estado_civil, escolaridade, renda, tipo_de_veiculo, combustivel, km_por_mes, melhorias, necessidades, aspectos, sugestoes, sustentabilidade, frequencia_abastecimento, criterios_escolha, utilizacao_app, motivo_utilizacao_app, experiencia_app])
+
+# cria um DataFrame com as respostas e salva em um arquivo CSV
+df_respostas = pd.DataFrame(respostas,
+                            columns=['Nome', 'Gênero', 'Idade', 'Cidade/Estado', 'Estado Civil', 'Escolaridade',
+                                     'Renda', 'Tipo de Veículo', 'Combustível', 'Km por Mês', 'Melhorias',
+                                     'Necessidades', 'Aspectos', 'Sugestões', 'Sustentabilidade', 'frequencia de abastecimento', 'criterios de escolha', 'opcoes de utilizacao', 'motivo de utilizacao', 'experiencia app'])
+df_respostas.to_csv('respostas.csv', index=False)
+
+# imprime as respostas de um usuário aleatório para conferência
+usuario = random.randint(0, len(df_respostas) - 1)
+print(df_respostas.iloc[usuario])
