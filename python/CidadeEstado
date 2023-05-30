@@ -1,0 +1,15 @@
+from faker import Faker
+import pandas as pd
+
+# Cria uma instância do Faker
+fake = Faker('pt_BR')
+
+# Gera uma lista de 1000 cidades fictícias e seus estados correspondentes
+cidades = [fake.city() for _ in range(1000)]
+estados = [fake.state_abbr() for _ in range(1000)]
+
+# Cria o DataFrame com as colunas de cidades e estados
+df = pd.DataFrame({'Cidades': cidades, 'Estados': estados})
+
+# Salva o DataFrame em um arquivo CSV
+df.to_csv('cidades.csv', index=False)
