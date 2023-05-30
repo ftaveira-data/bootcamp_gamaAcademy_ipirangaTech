@@ -1,0 +1,54 @@
+import random
+import csv
+import pandas as pd
+from faker import Faker
+
+fake = Faker('pt_BR')
+
+# Gera informações aleatórias para os usuários
+def gerar_usuario():
+    nome = fake.name()
+    genero = random.choice(['Masculino', 'Feminino'])
+    idade = random.randint(18, 80)
+    cidade_estado = fake.city() + '/' + fake.state_abbr()
+    estado_civil = random.choice(['Solteiro(a)', 'Casado(a)', 'Divorciado(a)', 'Viúvo(a)'])
+    escolaridade = random.choice(['Ensino Médio Incompleto', 'Ensino Médio Completo', 'Ensino Superior Incompleto', 'Ensino Superior Completo', 'Pós-graduação'])
+    renda = round(random.uniform(1000, 10000), 2)
+    tipo_veiculo = random.choice(['Carro', 'Moto', 'Caminhão', 'Ônibus'])
+    combustivel = random.choice(['Gasolina', 'Etanol', 'Diesel', 'GNV'])
+    km_por_mes = round(random.uniform(500, 5000), 2)
+
+    usuario = {
+        'Nome': nome,
+        'Gênero': genero,
+        'Idade': idade,
+        'Cidade/Estado': cidade_estado,
+        'Estado Civil': estado_civil,
+        'Escolaridade': escolaridade,
+        'Renda': renda,
+        'Tipo de veículo': tipo_veiculo,
+        'Combustível': combustivel,
+        'Km por mês': km_por_mes
+    }
+
+    return usuario
+
+# Gera 1000 usuários e os salva em um arquivo CSV
+def gerar_usuarios_csv():
+    with open('../venv/usuarios.csv', mode='w', newline='', encoding='utf-8') as file:
+        fieldnames = ['Nome', 'Gênero', 'Idade', 'Cidade/Estado', 'Estado Civil', 'Escolaridade', 'Renda', 'Tipo de veículo', 'Combustível', 'Km por mês']
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+
+        for i in range(1000):
+            usuario = gerar_usuario()
+            writer.writerow(usuario)
+
+    print("Usuários gerados com sucesso!")
+
+
+gerar_usuarios_csv()
+
+# Lê o arquivo CSV gerado e exibe os dados na console
+df = pd.read_csv('../venv/usuarios.csv', encoding='utf-8')
+print(df)
