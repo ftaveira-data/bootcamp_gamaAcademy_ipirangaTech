@@ -1,0 +1,14 @@
+import random
+import csv
+import locale
+
+locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')  # Definindo o locale para o Brasil
+
+# Gerar os valores de renda aleatórios
+rendas = [locale.currency(random.uniform(1400, 10000)) for _ in range(1000)]
+
+# Salvar os valores de renda em um arquivo CSV
+with open('rendas.csv', 'w', newline='', encoding='utf-8') as file:
+    writer = csv.writer(file)
+    writer.writerow(['Renda'])  # Escrever o cabeçalho da coluna
+    writer.writerows([[renda] for renda in rendas])  # Escrever os valores de renda
