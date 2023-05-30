@@ -1,0 +1,27 @@
+import random
+import pandas as pd
+
+tipos_de_veiculo = ['Moto', 'Carro', 'Ônibus', 'Caminhão']
+combustiveis_carro = ['Álcool', 'Gasolina', 'GNV', 'Diesel']
+combustiveis_moto = ['Gasolina']
+combustiveis_onibus = ['Diesel']
+combustiveis_caminhao = ['Diesel']
+
+usuarios = []
+
+for _ in range(1000):
+    tipo_veiculo = random.choice(tipos_de_veiculo)
+
+    if tipo_veiculo == 'Carro':
+        combustivel = random.choice(combustiveis_carro)
+    elif tipo_veiculo == 'Moto':
+        combustivel = random.choice(combustiveis_moto)
+    elif tipo_veiculo == 'Ônibus':
+        combustivel = random.choice(combustiveis_onibus)
+    elif tipo_veiculo == 'Caminhão':
+        combustivel = random.choice(combustiveis_caminhao)
+
+    usuarios.append({'Tipo de Veículo': tipo_veiculo, 'Combustível': combustivel})
+
+df_usuarios = pd.DataFrame(usuarios)
+df_usuarios.to_csv('usuarios.csv', index=False)
